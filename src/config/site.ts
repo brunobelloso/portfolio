@@ -33,7 +33,7 @@ export const featuredProjects = [
     description:
       "SaaS completo con org management, Stripe, dashboard de campañas y autenticación con Supabase SSR. Arquitectura lista para escalar desde el primer día.",
     tags: ["Next.js", "Prisma", "Stripe", "Supabase", "TypeScript"],
-    github: "#",
+    github: "https://github.com/brunobelloso/tasko-saas-boilerplate",
     demo: "#",
     thumbnail: "tasko" as ThumbnailVariant,
     detailedDescription:
@@ -52,7 +52,7 @@ export const featuredProjects = [
     description:
       "MVP de leads inmobiliarios con IA (Anthropic SDK), dashboard de captación y backend Fastify. Automatización del pipeline de ventas con análisis inteligente.",
     tags: ["Fastify", "Vite", "Anthropic AI", "Supabase", "TypeScript"],
-    github: "#",
+    github: "https://github.com/brunobelloso/mvp-real-estate",
     demo: "#",
     thumbnail: "realestate" as ThumbnailVariant,
     detailedDescription:
@@ -71,7 +71,7 @@ export const featuredProjects = [
     description:
       "Filtro AR en tiempo real con detección de 468 landmarks faciales, reemplazo de fondo y grabación de video+audio. Procesamiento de imágenes de alta precisión.",
     tags: ["Python", "OpenCV", "MediaPipe", "FFmpeg"],
-    github: "#",
+    github: "https://github.com/brunobelloso/filtro-pasamontanas",
     demo: "#",
     thumbnail: "pasamontanas" as ThumbnailVariant,
     detailedDescription:
@@ -93,7 +93,7 @@ export const otherProjects = [
     description:
       "Microservicio de autenticación con JWT, Argon2, MFA, Magic Links y rate limiting.",
     tags: ["Node.js", "Express", "JWT", "PostgreSQL", "Jest"],
-    github: "#",
+    github: "https://github.com/brunobelloso/auth-api",
     thumbnail: "authapi" as ThumbnailVariant,
     detailedDescription:
       "Microservicio de autenticación standalone. JWT con refresh token rotation, passwords hasheadas con Argon2id, MFA via TOTP compatible con Google Authenticator, Magic Links por email, rate limiting por IP y endpoint. Suite de tests con Jest con cobertura superior al 80%.",
@@ -111,7 +111,7 @@ export const otherProjects = [
     description:
       "Monitoreo de seguridad con detección de movimiento y alertas vía Telegram API.",
     tags: ["Python", "OpenCV", "Telegram API", "Threading"],
-    github: "#",
+    github: "https://github.com/brunobelloso/webcam-telegram-bot",
     thumbnail: "webcambot" as ThumbnailVariant,
     detailedDescription:
       "Sistema de vigilancia doméstica con detección de movimiento por diferencia de frames. Al detectar movimiento captura imagen y envía alerta con foto a un chat de Telegram vía Bot API. Usa threading para no bloquear el loop de captura. Configurable por JSON (sensibilidad, cooldown, destinatarios).",
@@ -129,7 +129,7 @@ export const otherProjects = [
     description:
       "Automatización empresarial de planillas farmacéuticas con configuración declarativa JSON.",
     tags: ["Python", "PyAutoGUI", "Pandas", "JSON Config"],
-    github: "#",
+    github: "https://github.com/brunobelloso/planilla-rpa",
     thumbnail: "rpa" as ThumbnailVariant,
     detailedDescription:
       "Automatización RPA para planillas de farmacias. Lee configuración declarativa desde JSON (campos, coordenadas, secuencias de pasos) y ejecuta la automatización usando PyAutoGUI + Pandas. Genera reportes de ejecución y maneja errores con reintentos automáticos. Elimina carga manual repetitiva en procesos administrativos.",
