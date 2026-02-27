@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 15 23 42;       /* slate-900  #0f172a */
+    --surface: 30 41 59;          /* slate-800  #1e293b */
+    --surface-2: 51 65 85;        /* slate-700  #334155 */
+    --foreground: 248 250 252;    /* slate-50   #f8fafc */
+    --muted-foreground: 148 163 184; /* slate-400 #94a3b8 */
+    --border: 51 65 85;           /* slate-700  #334155 */
+    --accent: 59 130 246;         /* blue-500   #3b82f6 */
+    --accent-dark: 37 99 235;     /* blue-600   #2563eb */
+    --accent-light: 147 197 253;  /* blue-300   #93c5fd */
+    --destructive: 239 68 68;
+    --ring: 59 130 246;
+    --radius: 0.625rem;
+  }
+}
+
+@theme inline {
+  --color-background: rgb(var(--background));
+  --color-surface: rgb(var(--surface));
+  --color-surface-2: rgb(var(--surface-2));
+  --color-foreground: rgb(var(--foreground));
+  --color-muted-foreground: rgb(var(--muted-foreground));
+  --color-border: rgb(var(--border));
+  --color-accent: rgb(var(--accent));
+  --color-accent-dark: rgb(var(--accent-dark));
+  --color-accent-light: rgb(var(--accent-light));
+  --color-destructive: rgb(var(--destructive));
+  --color-ring: rgb(var(--ring));
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@layer base {
+  * {
+    border-color: rgb(var(--border));
+  }
+  body {
+    background-color: rgb(var(--background));
+    color: rgb(var(--foreground));
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgb(var(--accent) / 0.25);
+  color: rgb(var(--accent-light));
+}
+
+*:focus-visible {
+  outline: 2px solid rgb(var(--ring));
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
